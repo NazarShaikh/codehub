@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Coding Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="pl-2 border-b bg-gray-200 py-5">
+        <div class="flex flex-wrap justify-between items-center gap-5 mx-5">
+            <h4 class="font-bold text-xl">
+                <span class="text-gray-500">< / ></span>
+                <span class="text-green-500">Code</span>
+                <span class="text-blue-500">With</span>
+                <span class="text-red-500">Fun</span>
+            </h4>
+            <div class="flex flex-wrap space-x-5 text-lg font-semibold text-gray-700">
+                <a href="#home" class="hover:text-blue-500">Home</a>
+                <a href="video.html" class="hover:text-blue-500">Videos</a>
+                <a href="notes.html" class="hover:text-blue-500">Notes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <header class="border-b pb-5 shadow-md">
+        <div class="p-5 text-center md:text-left">
+            <h1 class="text-2xl md:text-3xl font-bold text-blue-700">Welcome to Coding Hub,</h1>
+            <h2 class="text-xl md:text-2xl font-bold text-blue-900 font-mono">
+                Learn - <span id="dynamic-language" class="text-green-600 fade-in"></span>
+            </h2>
+            <p class="text-gray-700 mt-2 font-semibold">
+                Where we explore the power of programming languages  to bring ideas to life through clean, efficient code.
+            </p>
+        </div>
+    </header>
+
+    <!-- Frontend Languages Section -->
+    <section>
+        <h1 class="mt-5 ml-5 text-2xl md:text-3xl font-bold">Frontend Languages</h1>
+        <div class="mt-10 p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Card Template -->
+            <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+                <div class="flex gap-5 items-center">
+                    <img class="rounded-md w-16 h-16" src="html.png" alt="HTML">
+                    <p class="font-semibold">HTML is the standard language used to structure and present content on the web.</p>
+                </div>
+                <div class="mt-4 flex gap-5 justify-between">
+                    <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+                </div>
+            </div>
+            <!-- Repeat for Other Frontend Cards -->
+            <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+                <div class="flex gap-5 items-center">
+                    <img class="rounded-md w-16 h-16" src="css.png" alt="CSS">
+                    <p class="font-semibold">CSS is a stylesheet language used to control the presentation and layout of HTML elements,</p>
+                </div>
+                <div class="mt-4 flex gap-5 justify-between">
+                    <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+                </div>
+            </div>
+            <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+                <div class="flex gap-5 items-center">
+                    <img class="rounded-md w-16 h-16" src="js.png" alt="JavaScript">
+                    <p class="font-semibold">JavaScript is a programming language used to create dynamic and interactive effects within web</p>
+                </div>
+                <div class="mt-4 flex gap-5 justify-between">
+                    <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Backend Languages Section -->
+    <section>
+        <h1 class="mt-10 ml-5 text-2xl md:text-3xl font-bold">Backend Languages</h1>
+        <div class="mt-10 p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Backend Cards -->
+            <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+                <div class="flex gap-5 items-center">
+                    <img class="rounded-md w-16 h-16" src="py.jpeg" alt="Python">
+                    <p class="font-semibold">Python is a high-level,powerful, easy-to-learn programming  language known for its simplicity and readability.</p>
+                </div>
+                <div class="mt-4 flex gap-5 justify-between">
+                    <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+                </div>
+            </div>
+            <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+                <div class="flex gap-5 items-center">
+                    <img class="rounded-md w-16 h-16" src="java.jpeg" alt="Java">
+                    <p class="font-semibold">Java is a widely-used, object-oriented programming language known for its platform independence</p>
+                </div>
+                <div class="mt-4 flex gap-5 justify-between">
+                    <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+                </div>
+            </div>
+            <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+                <div class="flex gap-5 items-center">
+                    <img class="rounded-md w-16 h-16" src="php.png" alt="PHP">
+                    <p class="font-semibold">PHP is a server-side scripting language primarily used for web development to create dynamic and interactive web page</p>
+                </div>
+                <div class="mt-4 flex gap-5 justify-between">
+                    <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- other languages -->
+
+<section>
+    <h1 class="mt-10 ml-5 text-2xl md:text-3xl font-bold">Other Languages</h1>
+    <div class="mt-10 p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Backend Cards -->
+        <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+            <div class="flex gap-5 items-center">
+                <img class="rounded-md w-16 h-16" src="c.png" alt="Python">
+                <p class="font-semibold">C is a general-purpose, procedural programming language known for its efficiency and low-level memory manipulation capabilities.</p>
+            </div>
+            <div class="mt-4 flex gap-5 justify-between">
+                <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+            </div>
+        </div>
+        <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+            <div class="flex gap-5 items-center">
+                <img class="rounded-md w-16 h-16" src="c++.png" alt="Java">
+                <p class="font-semibold">C++ is an object-oriented, high-performance programming language that builds on C, adding features like classes, inheritance, and polymorphism</p>
+            </div>
+            <div class="mt-4 flex gap-5 justify-between">
+                <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+            </div>
+        </div>
+        <div class="flex flex-col border-2 rounded-lg p-4 bg-white shadow-md">
+            <div class="flex gap-5 items-center">
+                <img class="rounded-md w-16 h-16" src="dsa.png" alt="PHP">
+                <p class="font-semibold">DSA (Data Structures and Algorithms) refers to the study and implementation of efficient ways to store, organize, and manipulate data,</p>
+            </div>
+            <div class="mt-4 flex gap-5 justify-between">
+                <a href="video.html"><button class="px-4 py-2 text-center bg-green-200 hover:bg-green-100 rounded">Video</button></a>
+                    <a href="notes.html"><button class="px-4 py-2 text-center bg-red-200 hover:bg-red-100 rounded">Notes</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Dynamic Language Script -->
+    <script>
+        const languages = ["HTML", "CSS", "JavaScript", "Python", "Java", "PHP","C++","C","DSA"];
+        let index = 0;
+
+        function updateLanguage() {
+            const languageElement = document.getElementById("dynamic-language");
+            languageElement.textContent = languages[index];
+            languageElement.classList.remove("fade-in");
+            void languageElement.offsetWidth;
+            languageElement.classList.add("fade-in");
+            index = (index + 1) % languages.length;
+        }
+
+        updateLanguage();
+        setInterval(updateLanguage, 2000);
+    </script>
+</body>
+</html>
